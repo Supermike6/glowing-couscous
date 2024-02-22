@@ -1,0 +1,15 @@
+p {
+    color: blue;
+}
+
+img{
+    height: 300px;
+    width: auto;
+}
+
+.greendiv{
+    color: green;
+}
+.greendiv p{
+    color: red;
+}
