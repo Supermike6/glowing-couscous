@@ -1,15 +1,8 @@
-p {
-    color: blue;
+:root{
+    font-size: 10px;
+    --c1: cyan;
 }
 
-img{
-    height: 300px;
-    width: auto;
-}
-
-.greendiv{
-    color: green;
-}
-.greendiv p{
-    color: red;
+body{
+    background-color: var(--c1);
 }
