@@ -1,8 +1,0 @@
-:root{
-    font-size: 10px;
-    --c1: cyan;
-}
-
-body{
-    background-color: var(--c1);
-}

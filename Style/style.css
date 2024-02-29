@@ -1,0 +1,60 @@
+@font-face
+{
+    font-family: 'QRfontTFB';
+    src: url('/Users/gbancroft25/Library/Fonts/qrfonttfb.ttf');
+}
+
+* {
+    font-family: Courier, monospace;
+}
+
+:root{
+
+    font-size: 10px;
+    --c1: cyan;
+}
+
+body{
+    background-color: var(--c1);
+    margin: 0;
+}
+
+#navbar
+{
+    width:100%;
+
+    position:sticky;
+    top:0px;
+    
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+button{
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--c1);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttons{
+    background-color: var(--c1);
+    color: black;
+
+}
+
+.icon{
+    margin:10px 0 10px 0;
+}
+
+.button-container a
+{
+    text-decoration: none;
+}
