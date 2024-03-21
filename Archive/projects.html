@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Archive/project-style.css">
+    <script src="/Archive/script.js" defer></script>
+</head>
+<body>
+    <div id="sidebar-nav">
+        <button id="sidebar-nav-close" onclick="toggleNav()"></button>
+        <div class="flex-column">
+            <a href="./about.html"><button>About Me</button></a>
+            <a href="./projects.html"><button>My Projects</button></a>
+            <a href="./contact.html"><button>Contact Me</button></a>
+        </div>
+    </div>
+ 
+
+ 
+    <div class="flex-row" id="navbar">
+        <div class="left-nav-container">
+            <a href="../index.html">
+                <img src="../images/logo.png">
+            </a>
+            <p>gbancroft25@pascack.org  |  (123) 456-7890</p>
+        </div>
+        <div>
+            <button class ="hamburger-button" onclick="toggleNav()"><img src="../icons/menu.svg"></button>
+        </div>
+    </div>
+    <div>
+        <h1>
+            Projects
+        </h1>
+        <div class="header-container flex-row">
+            <button class="arrow-button" onclick="prevPage()"><img src="../icons/arrow_left.svg"></button>
+            <p><span id="current-page">1</span> / <span id="total-pages">3</span></p>
+            <button class="arrow-button" onclick="nextPage()"><img src="../icons/arrow_right.svg"></button>
+        </div>
+    </div>
+
+    <div id="pages">
+        <div id="page-0" class="page">
+            <div class="section-1 flex-row">
+                <p class="year-range">
+                    2022-2024
+                </p>
+                <h3 class="project-title">
+                    Title 1
+                </h3>
+                <p class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ex iste a id recusandae incidunt reprehenderit eius esse impedit! Laudantium quisquam possimus excepturi eveniet quidem.
+                </p>
+            </div>
+            <hr>
+            <div class="section-2 flex-row">
+                <p class="year-range">
+                    2022-2024
+                </p>
+                <h3 class="project-title">
+                    Title 2
+                </h3>
+                <p class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ex iste a id recusandae incidunt reprehenderit eius esse impedit! Laudantium quisquam possimus excepturi eveniet quidem.
+                </p>
+            </div>
+            <hr>
+            <div class="section-3 flex-row">
+                <p class="year-range">
+                    2022-2024
+                </p>
+                <h3 class="project-title">
+                    Title 3
+                </h3>
+                <p class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ex iste a id recusandae incidunt reprehenderit eius esse impedit! Laudantium quisquam possimus excepturi eveniet quidem.
+                </p>
+            </div>
+            
+        </div>
+        <div id="page-1"  class="page hidden">
+            <div class="section-1 flex-row">
+                <p class="year-range">
+                    2022-2024
+                </p>
+                <h3 class="project-title">
+                    Title 4
+                </h3>
+                <p class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ex iste a id recusandae incidunt reprehenderit eius esse impedit! Laudantium quisquam possimus excepturi eveniet quidem.
+                </p>
+            </div>
+            <hr>
+            <div class="section-2 flex-row">
+                <p class="year-range">
+                    2022-2024
+                </p>
+                <h3 class="project-title">
+                    Title 5
+                </h3>
+                <p class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ex iste a id recusandae incidunt reprehenderit eius esse impedit! Laudantium quisquam possimus excepturi eveniet quidem.
+                </p>
+            </div>
+            <hr>
+            <div class="section-3 flex-row">
+                <p class="year-range">
+                    2022-2024
+                </p>
+                <h3 class="project-title">
+                    Title 6
+                </h3>
+                <p class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ex iste a id recusandae incidunt reprehenderit eius esse impedit! Laudantium quisquam possimus excepturi eveniet quidem.
+                </p>
+            </div>
+            
+        </div>
+        <div id="page-2" class="page hidden" >
+            <div class="section-1 flex-row">
+                <p class="year-range">
+                    2022-2024
+                </p>
+                <h3 class="project-title">
+                    Title 7
+                </h3>
+                <p class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ex iste a id recusandae incidunt reprehenderit eius esse impedit! Laudantium quisquam possimus excepturi eveniet quidem.
+                </p>
+            </div>
+            <hr>
+            <div class="section-2 flex-row">
+                <p class="year-range">
+                    2022-2024
+                </p>
+                <h3 class="project-title">
+                    Title 8
+                </h3>
+                <p class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ex iste a id recusandae incidunt reprehenderit eius esse impedit! Laudantium quisquam possimus excepturi eveniet quidem.
+                </p>
+            </div>
+            <hr>
+            <div class="section-3 flex-row">
+                <p class="year-range">
+                    2022-2024
+                </p>
+                <h3 class="project-title">
+                    Title 9
+                </h3>
+                <p class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ex iste a id recusandae incidunt reprehenderit eius esse impedit! Laudantium quisquam possimus excepturi eveniet quidem.
+                </p>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+    <div class="page-num">
+        <p>Projects</p>
+    </div>
+
+
+</body>
+</html>

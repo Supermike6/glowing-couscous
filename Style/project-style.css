@@ -1,104 +1,75 @@
-.page-num{
-    position: fixed;
-    bottom:0;
-    right:0;
-    width:60px;
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+/* Select just a class */
+.primary-button {
+    background-color: #EF233C;
+    border: 1px solid #F7C59F;
+    border-radius: 4px;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-Right: 5px;
+    color:#F7C59F;
+    transition: all 0.25s;
 }
 
-.page-num p{
-    margin:5px;
+.primary-button:hover {
+    cursor: pointer;
+    background-color: #D80032;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 6px;
 }
 
-body{
-    background-color: black;
-    
-}
-
-/* Generic classes */
-
-.flex-row {
+.navbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items:center;
+    position:sticky;
+    top: 0;
+    background-color: #8D99AE;
+    padding:0;
+    margin: 0;
+    border: 0;
+}   
 
+.navbar-home-container{
+    width: 70px;
+    background-color: transparent;
 }
 
-*{
-    --primary:#000;
-    --secondary:#fff;
-
-    color: var(--secondary);
-}
-
-/* Specific classes */
-
-#navbar{
-
-}
-
-#navbar .left-nav-container {
-    font-size: 12px;
-
-    width: 50%;
-    color: white;
-}
-
-#navbar .left-nav-container img{
+.navbar-home-container img{
     width: 50px;
+    height: 65px;
+    margin: 10px 10px 10px 10px;
+    transition: all 0.25s;
+
+}
+.navbar-home-container img:hover{
+    width: 60px;
+    height: 78px;
+    margin: 3.5px 5px 3.5px 5px;
+    cursor: pointer;
 }
 
-#navbar .hamburger-button {
-    background: none;
+.navbar-links-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar-logo-button{
+    background-color: transparent;
+    margin: 0;
+    padding:0;
     border: 0;
 }
 
-#navbar .hamburger-button:hover img{
-    width: 30px;
-}
 
-.arrow-button {
-    background: none;
-    border: 0;
-    color: white;
-    font-size: 20px;
-}
 
-.arrow-button:hover img{
-   cursor: pointer;
-   width : 40px;
-}
-
-.arrow-button:active img{
-    width: 50px;
-}
-
-.arrow-button img {
-    width: 30px;
-
-}
-
-.page
-{
-    margin: 0px 100px 0px 100px;
-}
-
-.page .year-range{
-    width: 15%;
-
-}
-
-.page .project-title
-{
-    width: 20%;
-    font-size: 24px;
-}
-
-.page .description{
-    width: 65%;
-}
-
-/* IMPORTANT CLASSES */
-.hidden{
-    display: none;
-}
