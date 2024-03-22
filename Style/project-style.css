@@ -1,29 +1,28 @@
-*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0px;
+:root{
+    margin: none;
+    padding:none;
+    --primary:rgb(235,239,244);
+    --secondary:rgb(26,26,26);
+
+    background-color: var(--primary);
+    color: var(--secondary);
+
+
 }
 /* Select just a class */
 .primary-button {
-    background-color: #EF233C;
-    border: 1px solid #F7C59F;
-    border-radius: 4px;
+    background-color: transparent;
+    border:none;
     flex-direction: column;
-    margin-left: 5px;
-    margin-Right: 5px;
-    color:#F7C59F;
+
     transition: all 0.25s;
+
+    font-size: larger;
 }
 
 .primary-button:hover {
     cursor: pointer;
-    background-color: #D80032;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 6px;
+
 }
 
 .navbar{
@@ -31,10 +30,12 @@
     flex-direction: row;
     position:sticky;
     top: 0;
-    background-color: #8D99AE;
+    background-color: var(--primary);
+    border: none;
     padding:0;
     margin: 0;
     border: 0;
+    
 }   
 
 .navbar-home-container{
@@ -62,6 +63,7 @@
     justify-content: right;
     align-items: center;
     width: 100%;
+    
 }
 
 #navbar-logo-button{
@@ -69,6 +71,60 @@
     margin: 0;
     padding:0;
     border: 0;
+}
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.project{
+    background-color:white;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding:30px 30px 20px 30px;
+    width:25%;
+}
+
+.project-title{
+    color: aqua;
+}
+
+.project-text
+{
+    padding: 10px 10px;
+}
+
+
+.project-row
+{
+
+    flex-wrap: wrap;
+
+    margin: 0px 100px;
+}
+
+.project-image
+{
+    background-color: rgb(24,120,252);
+
+    padding: 40px 20px 0px 20px;
+}
+.project-image img{
+    width: 100%;
+    padding: none;
+    border: none;
+    margin: none;
 }
 
 
