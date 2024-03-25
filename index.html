@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    <link rel="stylesheet" href="./Style/index-style.css">
+    <title>Grant Bancroft - Home</title>
+    <link rel="stylesheet" href="./Style/NavigationBar.css">
 </head>
 <body>
-    <div id="navbar">
-        <a href="/pages/projects.html"><button>Place</button></a>
-
+    <div class = "navbar">
+        <div class="navbar-home-container">
+            <a href="/index.html">
+                <button id="navbar-logo-button"><img src="../images/logo.png"></button>
+            </a>
+        </div>
+        <div class="navbar-links-container">
+            <a href="/pages/projects.html"><button class="primary-button" id="button-projects">Projects</button></a>
+            <a href="/pages/about.html"><button class="primary-button" id="button-projects">About Me</button></a>
+            <a href="/pages/contact.html"><button class="primary-button" id="button-projects">Contact</button></a>
+        </div>
     </div>
 </body>
 </html>
+
