@@ -131,19 +131,18 @@ body{
 .project-image
 {
     background-color: var(--accent);
-    /* padding: 20px 20px 0px 20px; */
+    padding: 20px 20px 0px 20px;
 }
 .project-image img{
     width: 100%;
     padding: none;
-    border-width: 20px;
-    border-style: solid;
+    /* border-width: 20px; */
     border-color: var(--accent);
-    border-bottom: 0px;
+    margin-bottom: -4px;
 }
 
 .project-languages{
-    color: cornflowerblue;
+    color: var(--accent);
 }
 
 
