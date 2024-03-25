@@ -3,11 +3,15 @@
     padding:none;
     --primary:rgb(235,239,244);
     --secondary:rgb(26,26,26);
+    --accent: rgb(24,120,252);
 
     background-color: var(--primary);
     color: var(--secondary);
 
+}
 
+body{
+    margin: 0;
 }
 /* Select just a class */
 .primary-button {
@@ -18,10 +22,13 @@
     transition: all 0.25s;
 
     font-size: larger;
+    color: var(--primary);
+
 }
 
 .primary-button:hover {
     cursor: pointer;
+    color: var(--accent);
 
 }
 
@@ -30,7 +37,7 @@
     flex-direction: row;
     position:sticky;
     top: 0;
-    background-color: var(--primary);
+    background-color: var(--secondary);
     border: none;
     padding:0;
     margin: 0;
@@ -57,12 +64,13 @@
     cursor: pointer;
 }
 
-.navbar-links-container{
+.navbar-links-container{        
     display: flex;
     flex-direction: row;
     justify-content: right;
     align-items: center;
     width: 100%;
+    padding-right: 10px;
     
 }
 
@@ -81,6 +89,7 @@
     align-items:center;
 }
 
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -97,34 +106,44 @@
 }
 
 .project-title{
-    color: aqua;
+    color: var(--secondary);
+    font-family: 'Titillium Web';
+    font-size: 48px;
+    margin: 0 0;
 }
 
-.project-text
+.project-text p
 {
     padding: 10px 10px;
+    font-size: 24px;
+    font-family: 'Champagne & Limousines';
+    margin: 0 0;
 }
 
 
 .project-row
 {
-
     flex-wrap: wrap;
-
-    margin: 0px 100px;
+    
+    margin: 0px 75px;
 }
 
 .project-image
 {
-    background-color: rgb(24,120,252);
-
-    padding: 40px 20px 0px 20px;
+    background-color: var(--accent);
+    /* padding: 20px 20px 0px 20px; */
 }
 .project-image img{
     width: 100%;
     padding: none;
-    border: none;
-    margin: none;
+    border-width: 20px;
+    border-style: solid;
+    border-color: var(--accent);
+    border-bottom: 0px;
+}
+
+.project-languages{
+    color: cornflowerblue;
 }
 
 
