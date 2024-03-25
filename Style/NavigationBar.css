@@ -5,8 +5,8 @@
     --secondary:rgb(26,26,26);
     --accent: rgb(24,120,252);
 
-    background-color: var(--primary);
-    color: var(--secondary);
+    /* background-color: var(--primary); */
+    /* color: var(--secondary); */
 
 }
 
@@ -41,8 +41,20 @@ body{
     padding:0;
     margin: 0;
     border: 0;
-    
 }   
+
+.navbar-contact{
+    display: flex;
+    flex-direction: row;
+    position:sticky;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    padding:0;
+    margin: 0;
+    border: 0;
+}   
+
 
 .navbar-home-container{
     width: 70px;
